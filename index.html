@@ -1,28 +1,46 @@
+
+
+<!DOCTYPE html>
 <html>
     <head>
     <script src="script.js"></script>
+    <title>Interst Calculator</title>
     <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <div class="container">
+        <div class="maindiv">
             <h1>Simple Interest Calculator</h1>
             <div class="calculate">
                 Amount <input type="number" id="principal"> <br /> <br />
-                Rate <input type="range" id="rate" value="5"><span style="margin-left: 15px;">78%</span> <br /> <br />
-                No of years   <select name="5" id="years"> 
+                Rate <input type="range" id="rate" min="1" max="100" value="10.25" onchange="updateRate()"> <span id="rate_val">10.25%</span> <br /> <br />
+                No of years   <select  id="years"> 
                                     <option value="1">1</option>
                                     <option value="1">2</option>
                                     <option value="1">3</option>
                                     <option value="1">4</option>
                                     <option value="1">5</option>
-                                    <button onclick="compute()">Compute Interest</button>
+                                    <option value="1">6</option>
+                                    <option value="1">7</option>
+                                    <option value="1">8</option>
+                                    <option value="1">9</option>
+                                    <option value="1">10</option>
+                                    
                                 </select><br /> 
+                                <button onclick="compute()">Compute Interest</button>
+                                <span id="result">
+
+                                </span>
                 
 
             </div>
             
             
-          <p id="copy">© Everyone can get rich</p>
+<footer>
+
+    &#169; This Calculator belongs to --Biruk Anley--
+
+
+</footer>
         
 
         </div>
